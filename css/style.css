@@ -20,8 +20,8 @@ body {
 
 /* HEADER */
 .site-header {
-  background: #003594; 
-  border-bottom: 1px solid #FFB81C; 
+  background: #003594; /* Pitt Royal Blue */
+  border-bottom: 1px solid #FFB81C; /* Pitt Gold accent */
   padding: 10px 0;
 }
 

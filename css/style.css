@@ -304,25 +304,15 @@ html {
 /* Small screens: phone view */
 @media (max-width: 640px) {
 
-  /* Center all content on mobile */
-  body {
-    text-align: center;
-  }
-
-  .container {
-    text-align: center;
-  }
-
   /* HEADER */
   .header-content {
     flex-direction: column; /* stack logo, title, navbar vertically */
     align-items: center;
     text-align: center;
-    gap: 15px;
-    padding: 15px 0;
+    gap: 12px;
   }
 
-  /* Logo container - make logo more visible */
+  /* Logo container */
   .site-logo {
     display: block;
     width: auto;
@@ -331,67 +321,38 @@ html {
   }
 
   .site-logo img {
-    width: 100px; /* increased size for better visibility */
-    height: 100px; /* explicit height to maintain aspect ratio */
+    width: 80px; /* slightly bigger for visibility */
+    height: auto;
     display: inline-block;
     max-width: 100%;
-    border: 2px solid #FFB81C; /* add gold border for better visibility */
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* subtle shadow */
   }
 
   /* Club title below logo */
   .site-title {
-    font-size: 20px;
+    font-size: 22px;
     margin: 0;
-    text-align: center;
-    padding: 0 10px;
   }
 
   /* NAVBAR stacked below logo and title */
   .nav-menu {
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 8px;
     padding: 10px 0;
     margin: 0;
     width: 100%;
-    justify-content: center;
   }
 
   .nav-menu li {
-    width: 100%;
+    width: auto;
     text-align: center;
   }
 
   .nav-menu a {
     display: block;
-    width: 100%;
-    padding: 10px 0;
+    padding: 10px 20px;
     text-align: center;
-  }
-
-  /* MAIN CONTENT - center everything */
-  main {
-    text-align: center;
-    padding: 20px 16px;
-  }
-
-  main section {
-    text-align: center;
-  }
-
-  main h1 {
-    text-align: center;
-    color: #003594;
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-
-  main p {
-    text-align: center;
-    max-width: 90%;
-    margin: 0 auto 16px auto;
-    line-height: 1.6;
   }
 
   /* HOMEPAGE INTRO */
@@ -409,7 +370,6 @@ html {
 
   .intro-inner h1 {
     font-size: 24px;
-    text-align: center;
   }
 
   .intro-actions .button {
@@ -461,7 +421,6 @@ html {
   .mario-run img {
     height: 120px;
     margin: 0 auto;
-    display: block;
   }
 
   /* FOOTER */
@@ -477,18 +436,15 @@ html {
 
   .social-links {
     flex-wrap: wrap;
-    justify-content: center;
   }
 
   .social-links a {
     width: auto;
     margin: 4px 0;
-    text-align: center;
   }
 
   .footer-note {
     margin-top: 12px;
     font-size: 14px;
-    text-align: center;
   }
 }

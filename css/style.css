@@ -110,13 +110,13 @@ body {
   color: white;
 }
 
-.button-about {
+.button-pics {
   background: #FFB81C;
   color: #003594;
   border-color: #FFB81C;
 }
 
-.button-about:hover {
+.button-pics:hover {
   background: #002a70;
   color: white;
 }

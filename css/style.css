@@ -29,7 +29,7 @@ body {
   font-size: 30px;
   font-weight: bold;
   color: #FFB81C;
-  margin: 0;
+  margin-left: 25px;
   text-align: center;
 }
 
@@ -48,7 +48,6 @@ body {
   border-radius: 50%;
   display: block;
   max-width: 100%;
-  margin: 0 auto;
 }
 
 /* NAVBAR */
@@ -58,7 +57,6 @@ body {
   gap: 20px;
   margin: 0;
   padding: 0;
-  justify-content: center;
 }
 
 .nav-menu a {
@@ -179,29 +177,17 @@ body {
   margin-top: 10px;
 }
 
-/* Small screens (phones) */
+/* Small screens */
 @media (max-width: 640px) {
   .header-content {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .site-logo img {
-    width: 90px;
-    margin: 0 auto;
-  }
-
-  .site-title {
-    font-size: 22px;
-    text-align: center;
+    flex-wrap: wrap;
   }
 
   .nav-menu {
     width: 100%;
     justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 8px;
+    padding-top: 8px;
+    margin-right: 60px;
   }
 
   .homepage-intro {
@@ -210,6 +196,10 @@ body {
 
   .intro-inner h1 {
     font-size: 24px;
+  }
+
+  .site-logo img {
+    width: 50px; 
   }
 }
 

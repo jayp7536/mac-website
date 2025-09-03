@@ -45,14 +45,12 @@ body {
 .site-logo img {
   width: 120px;
   height: auto;
-  border-radius: 90%;
-  margin-right: 50px;
+  border-radius: 50%;
+  display: block;
+  max-width: 100%;
 }
 
-.site-title {
-  margin: 0;
-}
-
+/* NAVBAR */
 .nav-menu {
   list-style: none;
   display: flex;
@@ -96,6 +94,7 @@ body {
   text-decoration: none;
   font-weight: bold;
   margin: 4px;
+  transition: all 0.2s ease-in-out;
 }
 
 /* Event buttons (blue) */
@@ -144,13 +143,10 @@ body {
   width: 100%;
 }
 
-.site-footer .container {
-  max-width: none;
+.footer-content {
+  max-width: 1000px;
   margin: 0 auto;
   padding: 0 20px;
-}
-
-.footer-content {
   margin-bottom: 20px;
 }
 
@@ -201,6 +197,10 @@ body {
   .intro-inner h1 {
     font-size: 24px;
   }
+
+  .site-logo img {
+    width: 90px; 
+  }
 }
 
 .events-calendar h1 {
@@ -209,10 +209,6 @@ body {
 
 html {
   scroll-behavior: smooth;
-}
-
-.site-logo {
-  display: flex;
 }
 
 /* Events list clean style */
@@ -283,7 +279,7 @@ html {
   color: #FFB81C;
 }
 
-.mario-run img{
+.mario-run img {
   height: 150px;
 }
 
@@ -294,26 +290,4 @@ html {
   height: 400px;
   display: block;
   margin: 0 auto;
-}
-
-/* NAVBAR LOGO */
-.navbar .logo img {
-  height: 50px;
-  width: auto;
-  max-width: 100%;
-  border-radius: 50%; /* keeps circle shape */
-  display: block;
-}
-
-@media (max-width: 768px) {
-.navbar .logo img {
-  height: 40px;   /* slightly smaller for phones */
-  margin-left: 10px;
-}
-}
-
-@media (max-width: 480px) {
-.navbar .logo img {
-  height: 35px;
-}
 }

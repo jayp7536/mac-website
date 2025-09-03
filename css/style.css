@@ -35,11 +35,11 @@ body {
 
 .header-content {
   display: flex;
-  flex-direction: column;   /* stack logo, title, nav */
-  align-items: center;      /* center horizontally */
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   text-align: center;
-  gap: 10px;                /* space between items */
+  gap: 10px;
 }
 
 .site-logo img {
@@ -61,12 +61,11 @@ body {
   padding: 0;
 }
 
-
 .nav-menu a {
   padding: 8px 10px;
   border-radius: 8px;
   text-decoration: none;
-  color: #FFB81C; /* Pitt Gold */
+  color: #FFB81C;
   font-weight: bold;
 }
 
@@ -99,6 +98,19 @@ body {
   margin: 4px;
 }
 
+/* Event buttons (blue) */
+.button-about {
+  background: #003594;
+  color: #fff;
+  border-color: #003594;
+}
+
+.button-about:hover {
+  background: #002060;
+  color: #FFB81C;
+}
+
+/* Other buttons */
 .button-events {
   background: #FFB81C;
   color: #003594;
@@ -125,24 +137,33 @@ body {
 .site-footer {
   border-top: 1px solid #003594;
   margin-top: 60px;
-  padding: 16px 0;
+  padding: 30px 0;
   text-align: center;
   background: #003594;
   color: white;
+  width: 100%;
+}
+
+.site-footer .container {
+  max-width: none;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .footer-content {
-  margin-bottom: 80px;
+  margin-bottom: 20px;
 }
 
 .social-links {
-  display: inline-flex;
-  gap: 12px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 .social-links a {
   text-decoration: none;
-  padding: 6px 10px;
+  padding: 6px 12px;
   border: 1px solid white;
   border-radius: 999px;
   color: #FFB81C;
@@ -157,6 +178,7 @@ body {
 .footer-note {
   font-size: 14px;
   color: #FFB81C;
+  margin-top: 10px;
 }
 
 /* Small screens */
@@ -245,7 +267,7 @@ html {
 .officer-item {
   display: flex;
   justify-content: space-between;
-  border: 1px solid #003594; /* Pitt Blue */
+  border: 1px solid #003594;
   border-radius: 8px;
   padding: 12px 16px;
   background: #fff;
@@ -258,7 +280,7 @@ html {
 
 .officer-role {
   font-style: italic;
-  color: #FFB81C; /* Pitt Gold */
+  color: #FFB81C;
 }
 
 .mario-run img{
@@ -268,9 +290,30 @@ html {
 #calendar iframe {
   border: 0;
   width: 100%;
-  max-width: 800px; /* adjust to your liking */
-  height: 400px;    /* smaller height */
+  max-width: 800px;
+  height: 400px;
   display: block;
   margin: 0 auto;
 }
 
+/* NAVBAR LOGO */
+.navbar .logo img {
+  height: 50px;
+  width: auto;
+  max-width: 100%;
+  border-radius: 50%; /* keeps circle shape */
+  display: block;
+}
+
+@media (max-width: 768px) {
+.navbar .logo img {
+  height: 40px;   /* slightly smaller for phones */
+  margin-left: 10px;
+}
+}
+
+@media (max-width: 480px) {
+.navbar .logo img {
+  height: 35px;
+}
+}

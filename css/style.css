@@ -335,13 +335,14 @@ html {
 
   /* NAVBAR stacked below logo and title */
   .nav-menu {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 8px;
+    gap: 15px;
     padding: 10px 0;
     margin: 0;
     width: 100%;
+    flex-wrap: wrap;
   }
 
   .nav-menu li {
@@ -351,7 +352,7 @@ html {
 
   .nav-menu a {
     display: block;
-    padding: 10px 20px;
+    padding: 8px 12px;
     text-align: center;
   }
 

@@ -42,12 +42,19 @@ body {
   gap: 10px;
 }
 
+/* LOGO STYLES - FIXED */
+.site-logo {
+  display: block;
+  text-decoration: none;
+}
+
 .site-logo img {
   width: 120px;
   height: auto;
   border-radius: 50%;
   display: block;
   max-width: 100%;
+  margin: 0 auto;
 }
 
 /* NAVBAR */
@@ -134,7 +141,6 @@ body {
 
 /* FOOTER */
 .site-footer {
-  
   margin-top: 60px;
   padding: 30px 0;
   text-align: center;
@@ -271,7 +277,7 @@ html {
   margin: 0 auto;
 }
 
-/* Small screens: phone view */
+/* Small screens: phone view - FIXED */
 @media (max-width: 640px) {
 
   /* HEADER */
@@ -287,13 +293,16 @@ html {
     width: auto;
     text-align: center;
     margin: 0 auto;
+    text-decoration: none;
   }
 
   .site-logo img {
     width: 80px;
     height: auto;
-    display: inline-block;
+    display: block;
     max-width: 100%;
+    margin: 0 auto;
+    border-radius: 50%;
   }
 
   .site-title {

@@ -374,10 +374,21 @@ html {
   }
 
   .intro-actions .button {
-    width: 80%;
-    max-width: 250px;
+    width: auto;
+    max-width: none;
     text-align: center;
-    margin: 6px 0;
+    margin: 6px 8px;
+    display: inline-block;
+  }
+
+  /* Keep intro actions in a row */
+  .intro-actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
   }
 
   /* EVENTS & OFFICERS LIST */

@@ -33,6 +33,7 @@ body {
   text-align: center;
 }
 
+
 .header-content {
   display: flex;
   flex-direction: column;   /* stack logo, title, nav */

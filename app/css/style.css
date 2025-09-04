@@ -275,3 +275,30 @@ html {
   margin: 0 auto;
 }
 
+/* Update your mobile styles */
+@media (max-width: 640px) {
+  .site-logo {
+    display: block;
+    width: auto;
+    text-align: center;
+    margin: 0 auto;
+    order: -1; /* This ensures logo appears first on mobile */
+  }
+
+  .site-logo img {
+    width: 80px;
+    height: auto;
+    display: block; /* Changed from inline-block to block */
+    max-width: 100%;
+    margin: 0 auto;
+    border-radius: 50%;
+  }
+
+  .header-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+  }
+}
+

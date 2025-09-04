@@ -134,7 +134,7 @@ body {
 
 /* FOOTER */
 .site-footer {
-  border-top: 1px solid #003594;
+  
   margin-top: 60px;
   padding: 30px 0;
   text-align: center;
@@ -290,12 +290,10 @@ html {
   }
 
   .site-logo img {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: auto;
     display: inline-block;
     max-width: 100%;
-    border: 2px solid #FFB81C;
-    box-shadow: 0 2px 8px rgba(255, 184, 28, 0.3);
   }
 
   .site-title {

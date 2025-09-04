@@ -177,7 +177,6 @@ body {
   margin-top: 10px;
 }
 
-
 .events-calendar h1 {
   margin-top: 50px;
 }
@@ -267,52 +266,17 @@ html {
   margin: 0 auto;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Small screens: phone view */
 @media (max-width: 640px) {
 
   /* HEADER */
   .header-content {
-    flex-direction: column; /* stack logo, title, navbar vertically */
+    flex-direction: column;
     align-items: center;
     text-align: center;
     gap: 12px;
   }
 
-  /* Logo container */
   .site-logo {
     display: block;
     width: auto;
@@ -321,19 +285,17 @@ html {
   }
 
   .site-logo img {
-    width: 80px; /* slightly bigger for visibility */
+    width: 80px;
     height: auto;
     display: inline-block;
     max-width: 100%;
   }
 
-  /* Club title below logo */
   .site-title {
     font-size: 22px;
     margin: 0;
   }
 
-  /* NAVBAR stacked below logo and title */
   .nav-menu {
     flex-direction: row;
     align-items: center;
@@ -381,7 +343,6 @@ html {
     display: inline-block;
   }
 
-  /* Keep intro actions in a row */
   .intro-actions {
     display: flex;
     flex-direction: row;
@@ -429,34 +390,36 @@ html {
     display: block;
   }
 
-  /* CLUB PICS / MEDIA */
   .mario-run img {
     height: 120px;
     margin: 0 auto;
   }
 
-  /* FOOTER */
+  /* FOOTER (horizontal links on phone) */
   .site-footer,
-  .footer-content,
-  .social-links {
-    text-align: center;
-    display: flex;
+  .footer-content {
     flex-direction: column;
     align-items: center;
     gap: 10px;
+    text-align: center;
   }
 
   .social-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     flex-wrap: wrap;
+    gap: 8px;
   }
 
   .social-links a {
-    width: auto;
-    margin: 4px 0;
+    margin: 2px 4px;
+    padding: 4px 8px;
+    font-size: 13px;
   }
 
   .footer-note {
     margin-top: 12px;
-    font-size: 14px;
+    font-size: 13px;
   }
 }
